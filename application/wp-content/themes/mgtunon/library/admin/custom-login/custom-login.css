@@ -1,0 +1,30 @@
+/* Custom Login Styles */
+ 
+html {background-color: #1e1e1e !important; color: black;}	/* Page background. Can't use the body tag for this! */
+h1 a {	/* Title image (The "WordPress Logo"). Remember to update the height and width your image's dimensions */
+background:url(images/blog-login-mgtunonblog.jpg) 0 0 no-repeat;
+width:320px;
+height:100px;
+} 
+ 
+body.login {border-top-color:#282d47; color: #1e1e1e;}	/* Top bar background color */
+.login p#backtoblog a:link, .login p#backtoblog a:visited {color:#60689C;}	/* Link effects in top bar */
+.login p#backtoblog a:hover, .login p#backtoblog a:active {color:#fff;text-decoration:underline;}	/* Rollover link effects in top bar */
+
+.login #nav a, .login #nav a:link, .login #nav a:visited {color:#60689C !important; }
+.login #nav a:hover {color:#fff !important; }
+#nav { text-shadow: none !important;}
+
+.updated, .login .message {background-color: #282d47; border: #333; border: white solid 1px; color: white;}
+
+form {
+-webkit-box-shadow: 0 0 14px #282d47;
+-moz-box-shadow: 0 0 14px #282d47;
+box-shadow: 0 0 14px #282d47;
+border-top-left-radius: 0 0 !important;
+border-top-right-radius: 0 0 !important;
+-moz-border-radius-topleft: 0 0 !important;
+-moz-border-radius-topright: 0 0 !important;
+background: url(images/blog-loginbg-mgtunonblog.gif) white no-repeat;
+background-position: top right;
+}
