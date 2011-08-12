@@ -476,10 +476,26 @@ a {
 	height: 0;
 }
 
+/* Comments */
+
+#comments_title {
+	margin-bottom: 10px;
+}
+
+#comments li {
+	border-bottom: #ccc solid thin;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.comment_avatar {
+	margin-right: 6px;
+}
 
 
 
 
+.floatleft { float: left; }
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
