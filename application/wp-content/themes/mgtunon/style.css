@@ -332,6 +332,10 @@ a {
 	padding-right: 16px;
 }
 
+#page_title span {
+	color: #7e8396;
+	font-size: .6em;
+}
 
 #page_content h5 {
 	background-color: #5C648A;
