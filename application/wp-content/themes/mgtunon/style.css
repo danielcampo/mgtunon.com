@@ -290,8 +290,9 @@ a {
 }
 
 #page_main_left {
+	border-right: #ccc solid thin;
 	margin-right: 0;
-	width: 590px;
+	width: 589px;
 }
 
 .mgt_columns_rel_docs {
@@ -357,7 +358,6 @@ a {
 
 #mgt_sidebar {
 	background-color: #fdfdfd;
-	border-left: #ccc solid thin;
 }
 
 
@@ -414,6 +414,27 @@ a {
 #page_footer {
 	background: url('library/img/mgt_qotd_top_bg.png') top repeat-x;
 	padding: 20px 0;
+}
+
+.mgt_list_item {
+	border-bottom: #ccc solid thin;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.mgt_list_item:last-child, .mgt_columns_rel_docs:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+}
+	
+
+#crumbs {
+	background-color: #fff;
+	background-color: #fff;
+	border-bottom: #E1E1E1 solid thin;
+	font-size: small;
+	margin-bottom: 10px;
+	padding: 8px;
 }
 
 
