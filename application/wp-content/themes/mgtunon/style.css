@@ -246,6 +246,23 @@ a {
 	color: #202436;
 }
 
+#page_featured {
+	min-height: 220px;
+	position: relative;
+}
+
+#page_featured p {
+	width: 650px;
+}
+
+#page_featured_img {
+	display: inline;
+	float: right;
+	top: 4px;
+	position: absolute;
+	right: 0;
+}
+
 #page_qotd {
 	background: url('library/img/mgt_qotd_top_bg.png') top repeat-x;
 	margin-bottom: 2em;
