@@ -119,7 +119,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	background-color: #f9f9f9;
-	border-bottom: #e1e1e1 solid 2px;
+	border-bottom: #e1e1e1 solid 1px;
 	color: #202436;
 	font-size: 2em;
 }
@@ -130,10 +130,6 @@ h3 {
 
 h6 {
 	font-size: .9em;
-}
-
-hgroup *:first-child {
-	padding-bottom: 0;
 }
 
 p {
@@ -270,15 +266,19 @@ a {
 
 #page_main {
 	background: url('library/img/mgt_main_top_bg.png') top repeat-x;
-	padding-top: 8px;
 }
 
 #page_main.page, #page_main.single {
 	background: none;
 }
 
-#page_main_left, #page_main_right {
-	margin-top: 8px;
+#page_main_left {
+	margin-right: 0;
+	width: 590px;
+}
+
+#page_main_right {
+	width: 350px;
 }
 
 #mgt_columns_video {
@@ -391,7 +391,6 @@ a {
 
 #page_footer {
 	background: url('library/img/mgt_qotd_top_bg.png') top repeat-x;
-	margin-top: 8px;
 	padding: 20px 0;
 }
 
@@ -412,7 +411,6 @@ a {
 	padding: 4px;
 	position: relative;
 	top: 10px;
-	right: -10px;
 }
 
 .mgt_share li {

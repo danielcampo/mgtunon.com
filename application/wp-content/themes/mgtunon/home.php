@@ -33,11 +33,11 @@
 				<li><a class="hispanic-business-trends" href="/resource-category/hispanic-business-trends/">Hispanic Business Trends</a></li>
 			</ul>
 
-			<div id="page_main_left" class="grid_10 alpha">
+			<div id="page_main_left" class="grid_10 alpha omega">
 
-				<section id="mgt_columns" class="grid_10 alpha">
+				<section id="mgt_columns">
 
-					<section id="mgt_columns_video" class="grid_10 alpha">
+					<section id="mgt_columns_video">
 
 						<div id="mgt_columns_rel_video">
 						<h1>Latest Video Column</h1>						
@@ -72,7 +72,7 @@
 					<!-- END #mgt_columns_video -->
 
 
-					<section id="mgt_columns_latest" class="grid_10 alpha">
+					<section id="mgt_columns_latest">
 						
 						<h1>Related Column</h1>
 						<div id="mgt_columns_rel">
@@ -101,6 +101,7 @@
 
 
 					</section>
+					<!-- END #mgt_columns_latest -->
 
 				</section>
 				<!-- end #mgt_column -->

@@ -2,9 +2,9 @@
 
 		<div id="page_main" role="main" class="grid_16<?php mgt_ptype(); ?>">
 			
-			<div id="page_main_left" class="grid_10 alpha">
+			<div id="page_main_left" class="grid_10 alpha omega">
 				
-				<section id="page_content" class="grid_10 alpha">
+				<section id="page_content">
 				
 					<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 					
