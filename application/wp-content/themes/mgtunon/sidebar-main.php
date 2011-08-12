@@ -1,8 +1,9 @@
-<div id="page_main_right" class="grid_6 alpha">
+<div id="page_main_right" class="grid_6 alpha omega">
 			
-				<aside id="mgt_sidebar" class="grid_6 alpha">
+				<aside id="mgt_sidebar">
 				
 				<section id="mgt_rel_resources">
+					
 					<hgroup class="section_title">
 						<h1>Related Resources</h1>
 						<h6>Here are some of our latest business resources to help you with mold you into the business professional that you want to be.</h6>
