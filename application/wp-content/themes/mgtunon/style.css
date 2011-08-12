@@ -294,6 +294,11 @@ a {
 	width: 590px;
 }
 
+.mgt_columns_rel_docs {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 6px;
+}
+
 #page_main_right {
 	width: 350px;
 }

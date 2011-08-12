@@ -83,18 +83,22 @@
 								$mgt_columns_latest_args = array(
 								'post_type' => 'mgt_columns',
 								'mgt_resources_cats' => $cat,
-								'posts_per_page' => 1,
+								'posts_per_page' => 3,
 								'post__not_in' => array($latest_cat_id)
 							);
 							?>
 							<?php $mgt_columns_latest = NEW WP_Query($mgt_columns_latest_args); ?>
 
 							<?php if($mgt_columns_latest->have_posts()) : while($mgt_columns_latest->have_posts()) : $mgt_columns_latest->the_post(); ?>
+							<div class="mgt_columns_rel_docs">
 
 								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<p><?php echo excerpt(50); ?></p>
 
 								<span class="continue"><a href="<?php the_permalink(); ?>">Continue Reading</a></span>
+							
+							</div>
+							<!-- END #mgt_columns_rel_docs -->
 
 							<?php endwhile; endif; ?>
 						</div>
