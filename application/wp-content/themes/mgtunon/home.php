@@ -2,7 +2,7 @@
 
 		<section id="page_featured" class="grid_16">
 
-			<div id="page_featured_content" class="grid_11 alpha">
+			<div id="page_featured_content" class="grid_16 alpha">
 				<h1>Who is Manny Garcia Tunon?</h1>
 				<p>A talented writer and speaker, Manny Garc&#237;a-Tu&#241;&#243;n cuts straight to the heart of what business is all about with his powerful message of passion and meaning in the workplace. Manny Garcia-Tu&#241;on is Part-Owner and Executive Vice President of Lemartec, an international design-build firm headquartered in Miami, Florida.</p>
 
@@ -10,7 +10,7 @@
 			</div>
 			<!-- end #page_featured_content -->
 
-			<div id="page_middle_img" class="grid_5 omega">
+			<div id="page_featured_img">
 				<img src="<?php bloginfo('template_directory') ?>/library/img/mgt_headshot.png" alt="Manny Garcia Tunon" title="Manny Garcia Tunon" />
 			</div>
 
