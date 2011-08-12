@@ -503,6 +503,13 @@ a {
 .comment_avatar {
 	margin-right: 6px;
 }
+.comment-form-comment label {
+	display: block;
+}
+
+.form-allowed-tags {
+	display: none;
+}
 
 
 

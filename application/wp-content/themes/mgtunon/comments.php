@@ -1,4 +1,5 @@
 <div id="comments">
+
 	<?php if ($comments) : /* if comments exist */?>  
 		<h1 id="comments_title">Comments</h1>
 			<ol id="comments_list">
