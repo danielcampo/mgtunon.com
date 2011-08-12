@@ -1,7 +1,7 @@
 <div id="comments">
 	<?php if ($comments) : /* if comments exist */?>  
 		<h1 id="comments_title">Comments</h1>
-			<ol>
+			<ol id="comments_list">
 				<?php foreach ($comments as $comment) : /* comments loop start */?> 
 				
 				<li <?php echo $oddcomment; ?> id="comment-<?php comment_ID() ?>">

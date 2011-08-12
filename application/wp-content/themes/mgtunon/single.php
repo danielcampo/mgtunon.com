@@ -27,7 +27,7 @@
 				</section>
 				<!-- end #mgt_column -->
 				
-				<?php comments_template(); ?>	
+				<?php comments_template(); ?>
 			
 			</div>
 			<!-- end #page_main_left -->
