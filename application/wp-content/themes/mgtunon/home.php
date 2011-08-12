@@ -74,7 +74,7 @@
 
 					<section id="mgt_columns_latest">
 						
-						<h1>Related Column</h1>
+						<h1>Related Columns</h1>
 						<div id="mgt_columns_rel">
 							<?php 
 								$rel = wp_get_object_terms($post->ID, 'mgt_resources_cats');					
@@ -83,6 +83,7 @@
 								$mgt_columns_latest_args = array(
 								'post_type' => 'mgt_columns',
 								'mgt_resources_cats' => $cat,
+								'mgt_documents_types' => 'Document',
 								'posts_per_page' => 3,
 								'post__not_in' => array($latest_cat_id)
 							);
