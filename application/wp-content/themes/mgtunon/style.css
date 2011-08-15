@@ -532,6 +532,13 @@ padding: 3px 8px;
 }
 
 
+/* Contact Forms */
+
+.wpcf7-list-item label {
+	display: block;
+}
+
+
 
 
 .floatleft { float: left; }
