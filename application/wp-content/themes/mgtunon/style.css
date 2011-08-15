@@ -430,6 +430,14 @@ a {
 	border-bottom: none;
 	margin-bottom: 0;
 }
+
+.mgt_list_meta {
+background-color: #eeeff4;
+display: block;
+font-size: small;
+margin-top: -5px;
+padding: 3px 8px;
+}
 	
 
 #crumbs {
