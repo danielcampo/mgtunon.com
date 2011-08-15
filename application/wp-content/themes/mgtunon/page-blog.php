@@ -26,6 +26,9 @@
 									<?php the_title(); ?>
 								</a>
 							</h3>
+							<span class="mgt_list_meta">
+								Date: <?php the_date(); ?>   &nbsp;|&nbsp;   <?php include_term_data($post->ID,'Resource Categories: ','mgt_resources_cats','normal'); ?>
+							</span>
 							
 							<?php the_excerpt(); ?>
 							
