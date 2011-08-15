@@ -11,10 +11,10 @@
 	<meta name="description" content="A talented writer and speaker, Manny Garcia-Tunon cuts straight to the heart of what business is all about with his powerful message of passion and meaning in the workplace.">
 	<meta name="author" content="Epiksol Creative | http://epiksolcreative.com/">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico">
 	<!--[if lt IE 8 ]>	
-		<link rel="icon" href="http://mgt.epiksolcreative.com/favicon.ico" type='image/vnd.microsoft.icon' />
-		<link rel="shortcut icon" href="http://mgt.epiksolcreative.com/favicon.ico" type='image/vnd.microsoft.icon' />
+		<link rel="icon" href="<?php bloginfo('url'); ?>/favicon.ico" type='image/vnd.microsoft.icon' />
+		<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" type='image/vnd.microsoft.icon' />
 	<![endif]-->
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
