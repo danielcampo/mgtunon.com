@@ -341,6 +341,10 @@ a {
 	font-size: .6em;
 }
 
+#page_content {
+	margin-bottom: 10px;
+}
+
 #page_content h5 {
 	background-color: #5C648A;
 	border-bottom: #202436 solid 2px;
