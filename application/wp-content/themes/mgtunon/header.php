@@ -65,7 +65,7 @@
 						<li><a href="/programs">Programs</a></li>
 						<li><a href="/resources">Resources</a></li>
 						<li><a href="/biography">Biography</a></li>
-						<li><a href="/contacts">Contacts</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 					<!-- end #header_nav_ul -->
 					&nbsp;
