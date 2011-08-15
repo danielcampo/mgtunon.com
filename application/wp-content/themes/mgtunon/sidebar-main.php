@@ -2,31 +2,43 @@
 			
 				<aside id="mgt_sidebar">
 				
-				<?php if(!is_page('columns' || 'contact')) : ?>
 				<section id="mgt_rel_resources">
+				
+					<?php 
+					// Get Latest Video Column Category
+					$rel = wp_get_object_terms($post->ID, 'mgt_resources_cats');				
+					$cat = $rel[0] -> slug;
+					
+					if (isset($cat)) {
+						$mgt_rel_res_list_args = array(
+						'post_type' => 'mgt_resources',
+						'mgt_resources_cats' => $cat,
+						'posts_per_page' => 4,
+						'post__not_in' => array($latest_cat_id),
+						);
+						
+						$mgt_rel_res_list_title = "Related Resources";
+					}
+
+					else {
+						$mgt_rel_res_list_args = array(
+						'post_type' => 'mgt_resources',
+						'posts_per_page' => 4,
+						);
+						
+						$mgt_rel_res_list_title = "Latest Resources";	
+					}
+							
+					$mgt_rel_res_list = NEW WP_Query($mgt_rel_res_list_args);
+					?>		
 					
 					<hgroup class="section_title">
-						<h1>Related Resources</h1>
+						<h1><?php echo $mgt_rel_res_list_title; ?></h1>
 						<h6>Here are some of our latest business resources to help you with mold you into the business professional that you want to be.</h6>
 					</hgroup>					
 					
 					
-					<?php 
-					// Get Latest Video Column Category
-					$rel = wp_get_object_terms($post->ID, 'mgt_resources_cats');					
-					$cat = $rel[0] -> slug;
-					
-					$mgt_rel_res_list_args = array(
-					'post_type' => 'mgt_resources',
-					'mgt_resources_cats' => $cat,
-					'posts_per_page' => 4,
-					'post__not_in' => array($latest_cat_id),
-					);
-							
-					$mgt_rel_res_list = NEW WP_Query($mgt_rel_res_list_args);
-					?>
-					
-					<div id="mgt_resources">
+					<div id="mgt_resources_list">
 					
 						<ul id="mgt_resources_ul">							
 							
@@ -52,7 +64,7 @@
 					<!-- END #mgt_resources -->
 					
 				</section>
-				<?php endif; ?>
+				<!-- END #mgt_rel_resources -->
 				
 				<?php if(!is_page('programs')) : ?>
 				<section id="mgt_programs">
