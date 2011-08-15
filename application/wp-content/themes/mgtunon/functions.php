@@ -66,6 +66,7 @@ define('FUNCTIONSPATH',LIBRARYPATH.'/fnc');
 	function mgt_ptype() {
 		if(is_single()) : echo ' single'; 
 		elseif (is_page()) : echo ' page'; 
+		elseif (is_404()) : echo ' 404';
 		endif;
 	}
 

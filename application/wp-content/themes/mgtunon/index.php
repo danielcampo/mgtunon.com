@@ -23,8 +23,6 @@
 					
 					<?php endif; ?>
 					
-					
-			
 				</section>
 				<!-- end #mgt_column -->
 			
