@@ -2,6 +2,7 @@
 			
 				<aside id="mgt_sidebar">
 				
+				<?php if(!is_page('columns')) : ?>
 				<section id="mgt_rel_resources">
 					
 					<hgroup class="section_title">
@@ -51,7 +52,9 @@
 					<!-- END #mgt_resources -->
 					
 				</section>
+				<?php endif; ?>
 				
+				<?php if(!is_page('programs')) : ?>
 				<section id="mgt_programs">
 					<hgroup class="section_title">
 						<h1>Business Programs</h1>
@@ -63,7 +66,8 @@
 					<ul id="mgt_programs_ul">
 						<?php wp_list_pages('post_type=mgt_programs&title_li='); ?>
 					</ul>
-				</section>		
+				</section>
+				<?php endif; ?>
 				
 							
 				</aside>
