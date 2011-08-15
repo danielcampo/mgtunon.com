@@ -2,7 +2,7 @@
 			
 				<aside id="mgt_sidebar">
 				
-				<?php if(!is_page('columns')) : ?>
+				<?php if(!is_page('columns' || 'contact')) : ?>
 				<section id="mgt_rel_resources">
 					
 					<hgroup class="section_title">

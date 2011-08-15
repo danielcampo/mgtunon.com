@@ -289,7 +289,7 @@ a {
 	background: url('library/img/mgt_main_top_bg.png') top repeat-x;
 }
 
-#page_main.page, #page_main.single {
+#page_main.page, #page_main.single, #page_main.404 {
 	background: none;
 }
 
