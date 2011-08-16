@@ -14,7 +14,7 @@
 						$mgt_rel_res_list_args = array(
 						'post_type' => 'mgt_resources',
 						'mgt_resources_cats' => $cat,
-						'posts_per_page' => 20,
+						'posts_per_page' => 4,
 						'post__not_in' => array($latest_cat_id),
 						);
 						
@@ -24,7 +24,7 @@
 					else {
 						$mgt_rel_res_list_args = array(
 						'post_type' => 'mgt_resources',
-						'posts_per_page' => 20,
+						'posts_per_page' => 4,
 						);
 						
 						$mgt_rel_res_list_title = "Latest Resources";	
