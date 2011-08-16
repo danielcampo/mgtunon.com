@@ -26,7 +26,7 @@ function register_custom_post_type()
     'query_var' => true,
     'rewrite' => array('slug' => 'columns'),
     'capability_type' => 'post',
-    'hierarchical' => false,
+    'hierarchical' => true,
     'menu_position' => null,
 	'taxonomies' => array('mgt_publications', 'mgt_resources_cats', 'mgt_documents_types'),	
     'supports' => array('title','editor','thumbnail','excerpt')
@@ -56,7 +56,7 @@ function register_custom_post_type()
     'query_var' => true,
     'rewrite' => array('slug' => 'resources'),
     'capability_type' => 'post',
-    'hierarchical' => false,
+    'hierarchical' => true,
     'menu_position' => null,
 	'taxonomies' => array('mgt_resources_cats'),	
     'supports' => array('title','editor','thumbnail','excerpt')
