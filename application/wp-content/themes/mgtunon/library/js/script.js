@@ -18,10 +18,10 @@ $(document).ready(function(){
 		$('#mgt_resources_ul').load('/ajax-mgt-res-list/', {cat : $(this).attr('class')}, function(){ $('#mgt_resources .loader').fadeOut(500); $('#mgt_resources_cats').slideto({ highlight: false }); });
 	});
 	
-	// Loads MGT Related Resources - Sidebar List
+	// Loads MGT Related Resources
 	$.ajaxSetup({cache:false});
 	
-	$('#mgt_resources_cats a').click(function(e){
+	$('.page #mgt_resources_cats a').click(function(e){
 
 		e.preventDefault();
 		
