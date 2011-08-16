@@ -6,6 +6,7 @@ define('WP_USE_THEMES',false);
 ?>
 
 	<?php
+	global $mgt_cat;
 	$mgt_cat = $_POST['cat'];
 	
 	$mgt_res_list_args = array(
@@ -45,3 +46,6 @@ define('WP_USE_THEMES',false);
 	<p><?php _e('<em>Sorry, there are currently no related resources for this item.</em>'); ?></p>
 
 	<?php endif; ?>
+	
+	
+	<h3><a href="<?php bloginfo('url'); echo '/'.$mgt_cat; ?>">View All <?php echo get_the_title($mgt_cat); ?> Resources</a></h3>
