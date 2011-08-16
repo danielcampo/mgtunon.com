@@ -308,7 +308,7 @@ a {
 #page_main_left {
 	border-right: #ccc solid thin;
 	margin-right: 0;
-	min-height: 512px;	
+	min-height: 512px;
 	width: 589px;
 }
 
@@ -468,6 +468,11 @@ padding: 3px 8px;
 	font-size: small;
 	margin-bottom: 10px;
 	padding: 8px;
+}
+
+#crumbs .paged {
+	color: #aaa;
+	font-size: smaller;
 }
 
 
