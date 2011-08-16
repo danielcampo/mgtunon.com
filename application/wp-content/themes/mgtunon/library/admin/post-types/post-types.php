@@ -27,7 +27,7 @@ function register_custom_post_type()
     'rewrite' => array('slug' => 'columns'),
     'capability_type' => 'post',
     'hierarchical' => true,
-    'menu_position' => null,
+    'menu_position' => 20,
 	'taxonomies' => array('mgt_publications', 'mgt_resources_cats', 'mgt_documents_types'),	
     'supports' => array('title','editor','thumbnail','excerpt')
   ); 
@@ -57,7 +57,7 @@ function register_custom_post_type()
     'rewrite' => array('slug' => 'resources'),
     'capability_type' => 'post',
     'hierarchical' => true,
-    'menu_position' => null,
+    'menu_position' => 20,
 	'taxonomies' => array('mgt_resources_cats'),	
     'supports' => array('title','editor','thumbnail','excerpt')
   ); 
@@ -87,7 +87,7 @@ function register_custom_post_type()
     'rewrite' => array('slug' => 'programs'),
     'capability_type' => 'post',
     'hierarchical' => true,
-    'menu_position' => null,
+    'menu_position' => 20,
 	'taxonomies' => array('mgt_programs_cats'),	
     'supports' => array('title','editor','thumbnail','excerpt')
   ); 
