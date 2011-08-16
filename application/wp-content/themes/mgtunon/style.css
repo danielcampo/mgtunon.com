@@ -287,10 +287,22 @@ a {
 
 #page_main {
 	background: url('library/img/mgt_main_top_bg.png') top repeat-x;
+	padding-top: 14px;
 }
 
-#page_main.page, #page_main.single, #page_main.404 {
+#page_main.page {
 	background: none;
+	padding-top: 0;
+}
+
+#page_main.single {
+	background: none;
+	padding-top: 0;
+}
+
+#page_main.404 {
+	background: none;
+	padding-top: 0;
 }
 
 #page_main_left {
