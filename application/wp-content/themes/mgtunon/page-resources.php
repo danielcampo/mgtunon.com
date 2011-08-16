@@ -2,7 +2,7 @@
 
 		<div id="page_main" role="main" class="grid_16<?php mgt_ptype(); ?>">
 		
-			<h1><?php the_title(); ?></h1>
+			<h1 id="page_title"><?php the_title(); ?></h1>
 						
 			<?php mgt_resources_cats(); ?>
 			<!-- END #mgt_resources_cats(); -->			
@@ -71,15 +71,14 @@
 							
 							
 						</div>
-						
-						<?php next_posts_link('view next page of resources &#8594;', $mgt_rel_res_list->max_num_pages) ?>
 						<!-- END .mgt_list_item -->
 											
 							<?php endwhile; else: ?>
 											
 							<p><?php _e('<em>Sorry, there are currently no related resources for this item.</em>'); ?></p>
 										
-							<?php endif; ?>						
+							<?php endif; ?>	
+
 									
 					</div>
 					<!-- END #mgt_resources -->
