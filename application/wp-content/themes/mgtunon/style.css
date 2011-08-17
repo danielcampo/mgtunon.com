@@ -423,7 +423,7 @@ a {
 	border-top: none;
 }
 
-#mgt_resources .loader {
+.loader {
 	background: url('library/img/ajax-loader.gif') center center no-repeat;
 	display: block;
 	height: 15px;
