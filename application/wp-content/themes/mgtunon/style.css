@@ -327,7 +327,13 @@ a {
 }
 
 .mgt_columns_video_item {
-	padding-top: 10px;
+	border-bottom: #ccc solid thin;
+	margin-bottom: 0.9px;
+	padding: 10px 10px 5px 0;
+}
+
+.mgt_columns_video_item:last-child {
+	border-bottom: none;
 }
 
 .mgt_columns_video_overlay {
@@ -342,7 +348,7 @@ a {
 
 .mgt_columns_video_thumb {
 	float: left;
-	margin-right: 20px;
+	margin-right: 10px;
 }
 
 .mgt_columns_video_desc {
