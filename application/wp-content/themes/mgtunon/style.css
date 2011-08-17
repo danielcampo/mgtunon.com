@@ -326,9 +326,31 @@ a {
 	padding-bottom: 10px;
 }
 
-.mgt_columns_video_desc {
-	padding-left: 8px;
+.mgt_columns_video_item {
+	padding-top: 10px;
 }
+
+.mgt_columns_video_overlay {
+	background: url('library/img/mgt_icon_video_overlay.png') center center no-repeat;
+	cursor: pointer;
+	height: 45px;
+	left: 90px;
+	position: relative;
+	top: 45px;
+	width: 45px;
+}
+
+.mgt_columns_video_thumb {
+	float: left;
+	margin-right: 20px;
+}
+
+.mgt_columns_video_desc {
+	float: right;
+	padding-left: 8px;	
+	width: 335px;
+}
+
 
 .mgt_columns_video_desc * {
 	margin: 0;
