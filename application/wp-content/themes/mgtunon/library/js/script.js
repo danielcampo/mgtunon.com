@@ -14,8 +14,10 @@ $(document).ready(function(){
 
 		e.preventDefault();
 		
+		alert('Clicked!');
+		
 		$('#mgt_columns_video').html('<span class="loader"></span>');
-		$('#mgt_columns_video').load('/ajax-mgt-vid-col/', {id : $(this).attr('id')}, function(){ $('#mgt_resources .loader').fadeOut(500); });
+		$('#mgt_columns_video').load('/ajax-mgt-vid-col/', {id : $(this).attr('id')}, function(){ $('#mgt_columns_video .loader').fadeOut(500); });
 	});	
 
 	// Loads MGT Related Resources - Sidebar List
@@ -73,8 +75,8 @@ $(document).ready(function(){
 
 		e.preventDefault();
 		
-		$('#mgt_columns_rel_video').html('<span class="loader"></span>');
-		$('#mgt_columns_rel_video').load('/ajax-mgt-col-vid-list/', {cat : $(this).attr('class')});
+		$('#mgt_columns_video').html('<span class="loader"></span>');
+		$('#mgt_columns_video').load('/ajax-mgt-col-vid-list/', {cat : $(this).attr('class')});
 	});		
 	
 	
