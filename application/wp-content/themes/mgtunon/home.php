@@ -34,6 +34,8 @@
 				<section id="mgt_columns">
 
 					<section id="mgt_columns_video">
+					
+						<?php mgt_video_player(); ?>
 
 						<h1 id="mgt_columns_video_title">Latest Video Columns</h1>
 
@@ -70,7 +72,7 @@
 								</div>
 								<!-- END .mgt_columns_video_desc -->
 								
-								<div id="<?php echo $post->ID; ?>" class="mgt_columns_video_overlay"></div>
+								<a id="<?php echo $post->ID; ?>" class="mgt_columns_video_overlay" href="<?php the_permalink(); ?>"></a>
 							</div>
 
 							<?php
@@ -84,7 +86,6 @@
 
 					</section>
 					<!-- END #mgt_columns_video -->
-
 
 					<section id="mgt_columns_latest">
 

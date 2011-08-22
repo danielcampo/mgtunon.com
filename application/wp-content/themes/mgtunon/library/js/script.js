@@ -2,24 +2,21 @@
 
 */
 $(document).ready(function(){
-		
 
 	// Open rel='external' links in New Tab
 	$('a[rel=external]').attr('target', '_blank');
-	
-	// Loads MGT Video Column
-	$.ajaxSetup({cache:false});
-	
+
+
+	// Loads MGT Video Player
 	$('.mgt_columns_video_overlay').click(function(e){
 
 		e.preventDefault();
 		
-		alert('Clicked!');
+		$('#mgt_columns_video_player').slideDown('1800');
 		
-		$('#mgt_columns_video').html('<span class="loader"></span>');
-		$('#mgt_columns_video').load('/ajax-mgt-vid-col/', {id : $(this).attr('id')}, function(){ $('#mgt_columns_video .loader').fadeOut(500); });
+		$('#mgt_columns_video_player').load('/ajax-mgt-vid-col/', {id : $(this).attr('id')}, function(){ $('#mgt_columns_video_player .loader').fadeOut(500); });
 	});	
-
+	
 	// Loads MGT Related Resources - Sidebar List
 	$.ajaxSetup({cache:false});
 	

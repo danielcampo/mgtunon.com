@@ -339,6 +339,7 @@ a {
 .mgt_columns_video_overlay {
 	background: url('library/img/mgt_icon_video_overlay.png') center center no-repeat;
 	cursor: pointer;
+	display: block;
 	height: 45px;
 	left: 90px;
 	position: relative;
@@ -361,6 +362,11 @@ a {
 .mgt_columns_video_desc * {
 	margin: 0;
 	padding: 0 !important;
+}
+
+#mgt_columns_video_player {
+	background-color: rgba(255, 255, 255, 0.9);
+	display: block;
 }
 
 #mgt_columns_latest h3 {
