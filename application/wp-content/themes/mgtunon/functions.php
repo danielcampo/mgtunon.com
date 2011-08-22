@@ -67,16 +67,14 @@ define('FUNCTIONSPATH',LIBRARYPATH.'/fnc');
 		$mgt_file = $file;
 		$app_status = $_POST['app_status'];
 		
-		if (file_exists($mgt_file)) : 
+		if (file_exists($mgt_file)) { 
 			include_once($mgt_file);
-			
-		else:
+		}	
 		
-			if ($app_status != 0) {
-				echo '<script>$(document).ready(function(){ alert(\'File '.$mgt_file.' Does Not Exist!\'); });</script>';
-			}
 			
-		endif;		
+		elseif (!file_exists($mgt_file) && $app_status == 0) {
+				echo '<script>$(document).ready(function(){ alert(\'File '.$mgt_file.' Does Not Exist!\'); });</script>';
+		}		
 	}
 	
 	// MGT P. Type
@@ -130,6 +128,12 @@ define('MODULESPATH',LIBRARYPATH.'/mdl');
 	function mgt_rel_resources() {
 		$mgt_rel_resources = MODULESPATH.'/mgt-rel-resources/mgt-rel-resources.php';
 		mgt_inc($mgt_rel_resources);
+	}
+	
+	// MGT Video Player
+	function mgt_video_player() {
+		$mgt_video_player = MODULESPATH.'/mgt-video-player/mgt-video-player.php';
+		mgt_inc($mgt_video_player);
 	}
 	
 
