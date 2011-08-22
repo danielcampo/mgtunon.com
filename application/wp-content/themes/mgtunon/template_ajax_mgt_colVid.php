@@ -4,8 +4,23 @@
 */
 define('WP_USE_THEMES',false);
 ?>
-
-	<h1 id="mgt_columns_video_title">Video Column</h1>
+	<script>
+	// Close MGT Video Player
+	$('.close').click(function(e){
+	
+		e.preventDefault();
+		
+		$('#mgt_columns_video_player').slideUp('slow', resetPlayer);
+		
+		function resetPlayer() {
+			$('#mgt_columns_video_player').html('');
+		}
+	
+	});	
+	</script>
+	
+	<h1 id="mgt_columns_video_title">MGT Video Player</h1>
+	
 	<?php
 	$mgt_col_id = $_POST['id'];
 
@@ -45,3 +60,5 @@ define('WP_USE_THEMES',false);
 	
 				
 	<?php endif; ?>
+	
+	<a class="close" href="#">Close Video Player</a>

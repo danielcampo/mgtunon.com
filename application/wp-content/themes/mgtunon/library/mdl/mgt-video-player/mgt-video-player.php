@@ -1,0 +1,1 @@
+<div id="mgt_columns_video_player"></div>
