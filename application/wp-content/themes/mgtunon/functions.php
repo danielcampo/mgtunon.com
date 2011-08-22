@@ -1,4 +1,10 @@
 <?php
+// Application Status
+// 0 = Under Development
+// 1 = Live
+global $app_status;
+$app_status = 0;
+$_POST['app_status'] = $app_status;
 
 // Post Thumbnails
 add_theme_support( 'post-thumbnails' );
@@ -59,7 +65,18 @@ define('FUNCTIONSPATH',LIBRARYPATH.'/fnc');
 	// MGT Include
 	function mgt_inc($file) {
 		$mgt_file = $file;
-		if (file_exists($mgt_file)) : include_once($mgt_file); endif;		
+		$app_status = $_POST['app_status'];
+		
+		if (file_exists($mgt_file)) : 
+			include_once($mgt_file);
+			
+		else:
+		
+			if ($app_status != 0) {
+				echo '<script>$(document).ready(function(){ alert(\'File '.$mgt_file.' Does Not Exist!\'); });</script>';
+			}
+			
+		endif;		
 	}
 	
 	// MGT P. Type
