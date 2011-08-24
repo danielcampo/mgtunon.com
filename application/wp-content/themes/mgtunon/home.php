@@ -20,7 +20,7 @@
 		<section id="page_qotd" class="grid_16 clearfix">
 			<div id="qotd_content">
 				<h5>Quote of the Day</h5>
-				<blockquote class="qotd_text">"The greatest discovery of my generation is that a human being can alter his life by altering his attitudes of mind."<span class="qotd_author">William James</span></blockquote>
+				<?php if (function_exists('cd_qotd_quote')) { cd_qotd_quote(); } ?>
 			</div>
 		</section>
 
