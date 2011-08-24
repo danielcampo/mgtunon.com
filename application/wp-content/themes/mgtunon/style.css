@@ -347,6 +347,12 @@ a {
 	width: 45px;
 }
 
+.ie7 .mgt_columns_video_overlay, .ie8 .mgt_columns_video_overlay {
+	position: relative;
+	left: 90px;	
+	top: 45px;
+}
+
 .mgt_columns_video_thumb {
 	float: left;
 	margin-right: 10px;
@@ -367,6 +373,11 @@ a {
 #mgt_columns_video_player {
 	background-color: rgba(255, 255, 255, 0.9);
 	display: block;
+}
+
+.close {
+	display: block;
+	padding: 10px;
 }
 
 #mgt_columns_latest h3 {
