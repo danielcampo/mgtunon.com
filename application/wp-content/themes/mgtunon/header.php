@@ -15,10 +15,7 @@
 	<!--[if lt IE 8 ]>	
 		<link rel="icon" href="<?php bloginfo('url'); ?>/favicon.ico" type='image/vnd.microsoft.icon' />
 		<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico" type='image/vnd.microsoft.icon' />
-	<![endif]-->
-	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="library/js/libs/jquery-1.5.1.min.js">\x3C/script>')</script>		
+	<![endif]-->	
 	
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
