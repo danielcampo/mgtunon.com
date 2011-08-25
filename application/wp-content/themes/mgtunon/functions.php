@@ -104,7 +104,13 @@ define('MODULESPATH',LIBRARYPATH.'/mdl');
 		$mgt_cm_form = MODULESPATH.'/cm-form/cm-form.php';
 		mgt_inc($mgt_cm_form);
 	}
-	
+
+	// MGT Featured
+	function mgt_featured() {
+		$mgt_featured = MODULESPATH.'/mgt-featured/mgt-featured.php';
+		mgt_inc($mgt_featured);
+	}	
+
 	// MGT QOTD
 	function mgt_qotd() {
 		$mgt_qotd = MODULESPATH.'/mgt-qotd/mgt-qotd.php';
