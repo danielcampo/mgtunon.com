@@ -260,9 +260,9 @@ a {
 }
 
 #page_featured_img {
+	bottom: 0;
 	display: inline;
 	float: right;
-	top: 4px;
 	position: absolute;
 	right: 0;
 }
@@ -592,6 +592,35 @@ padding: 3px 8px;
 
 .form-allowed-tags {
 	display: none;
+}
+
+/* UMCM */
+.resource { 
+	border-bottom: #ccc solid thin;
+	margin-bottom: 20px;
+}
+
+.list-alpha, .list-alpha li {
+	list-style-type: lower-alpha !important;
+	margin-left: 2em;
+}
+
+
+/* Resource : 06.16.11 */
+.teenJobs_spanish {
+	cursor: pointer;
+}
+.teenJobs_spanish_letter, .teenJobs_english_letter {
+	display: none;
+	font-family: Courier;
+	font-size: 90%;
+}
+
+.teenJobs_spanish_letter a, .teenJobs_english_letter a {
+	color: #7D4E00;
+	font-size: small;
+	font-style: italic;
+	margin: 12px 0;
 }
 
 
