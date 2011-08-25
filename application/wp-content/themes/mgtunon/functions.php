@@ -17,7 +17,11 @@ register_sidebar(array(
 	'before_widget'=>'<aside id="mgt_rel_resources" class="mgt_resources">',
 	'after_widget'=>'</aside>'
 ));
+}
 
+// Scripts
+if(!is_admin()) {
+	wp_deregister_script('jquery');
 }
 
 /********************************/
