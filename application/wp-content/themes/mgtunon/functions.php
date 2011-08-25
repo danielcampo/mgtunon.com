@@ -1,11 +1,4 @@
 <?php
-// Application Status
-// 0 = Under Development
-// 1 = Live
-global $app_status;
-$app_status = 0;
-$_POST['app_status'] = $app_status;
-
 // Post Thumbnails
 add_theme_support( 'post-thumbnails' );
 
