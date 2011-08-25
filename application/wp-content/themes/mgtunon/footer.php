@@ -1,7 +1,7 @@
 		<footer id="page_footer" class="grid_16">
 			<p>
-				Manny Garcia-Tunon - All material on this site Copyright &copy; Manny Garcia-Tunon<br />
-				Site Design &amp; Development: <a href="http://epiksolcreative.com/">Epiksol Creative</a>.
+				Manny Garcia-Tu&#241;on - All material on this site Copyright &copy;<?php the_date('Y'); ?> Manny Garcia-Tu&#241;on<br />
+				Site Design &amp; Development: <a href="http://epiksolcreative.com/" rel="external">Epiksol Creative</a>.
 			</p>
 		</footer>
 	
