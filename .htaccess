@@ -1,3 +1,5 @@
+redirect 301 /unosminutosconmanny_resources/ /unos-minutos-con-manny/resources/
+
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
