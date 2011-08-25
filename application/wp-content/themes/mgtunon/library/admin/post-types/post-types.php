@@ -4,6 +4,35 @@ add_action('init', 'register_custom_post_type');
 
 function register_custom_post_type() 
 {
+//Featured
+  $labels_mgt_featured = array(
+    'name' => _x('Featured', 'post type general name'),
+    'singular_name' => _x('Featured', 'post type singular name'),
+    'add_new' => _x('Add New', 'featured'),
+    'add_new_item' => __('Add New Featured'),
+    'edit_item' => __('Edit Featured'),
+    'new_item' => __('New Featured'),
+    'view_item' => __('View Featured'),
+    'search_items' => __('Search Featured'),
+    'not_found' =>  __('No featured found'),
+    'not_found_in_trash' => __('No featured found in Trash'), 
+    'parent_item_colon' => ''
+  );
+  $args_mgt_featured = array(
+    'labels' => $labels_mgt_featured,
+    'public' => true,
+    'publicly_queryable' => true,
+    'show_ui' => true, 
+    'query_var' => true,
+    'rewrite' => array('slug' => 'featured'),
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'menu_position' => 20,
+	'taxonomies' => array('mgt_publications', 'mgt_resources_cats', 'mgt_documents_types'),	
+    'supports' => array('title','editor','thumbnail','excerpt')
+  ); 
+  register_post_type('mgt_featured',$args_mgt_featured);
+  
 //Columns
   $labels_mgt_columns = array(
     'name' => _x('Columns', 'post type general name'),
