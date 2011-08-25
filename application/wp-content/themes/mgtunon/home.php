@@ -1,28 +1,38 @@
 <?php get_header(); ?>
 
 		<section id="page_featured" class="grid_16">
+		
+		<?php
+			$mgt_columns_featured_args = array(
+			'post_type' => 'mgt_featured',
+			'posts_per_page' => 5
+			);
+		?>
+		
+		<?php $mgt_columns_featured = NEW WP_Query($mgt_columns_featured_args); ?>
+
+		<?php if($mgt_columns_featured->have_posts()) : while($mgt_columns_featured->have_posts()) : $mgt_columns_featured->the_post(); ?>
 
 			<div id="page_featured_content" class="grid_16 alpha">
-				<h1>Who is Manny Garcia Tunon?</h1>
-				<p>A talented writer and speaker, Manny Garc&#237;a-Tu&#241;&#243;n cuts straight to the heart of what business is all about with his powerful message of passion and meaning in the workplace. Manny Garcia-Tu&#241;on is Part-Owner and Executive Vice President of Lemartec, an international design-build firm headquartered in Miami, Florida.</p>
-
-				<p><strong>&#8220;The better you connect with your team, the better your team will perform. The better you connect with your customers, the more of them you&#8217;ll have. That&#8217;s good business. That&#8217;s the bottom line.&#8221;</strong></p>
+				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
 			</div>
-			<!-- end #page_featured_content -->
+			<!-- END #page_featured_content -->
 
 			<div id="page_featured_img">
-				<img src="<?php bloginfo('template_directory') ?>/library/img/mgt_headshot.png" alt="Manny Garcia Tunon" title="Manny Garcia Tunon" />
+				<?php if(has_post_thumbnail()) : ?>
+					<?php the_post_thumbnail(); ?>
+				<?php endif; ?>
 			</div>
+			<!-- END #page_featured_img -->
+			
+		<?php endwhile; endif; ?>
 
 		</section>
-		<!-- end #page_middle -->
+		<!-- END #page_middle -->
+		
+		<?php mgt_qotd(); ?>
 
-		<section id="page_qotd" class="grid_16 clearfix">
-			<div id="qotd_content">
-				<h5>Quote of the Day</h5>
-				<?php if (function_exists('cd_qotd_quote')) { cd_qotd_quote(); } ?>
-			</div>
-		</section>
 
 		<div id="page_main" role="main" class="grid_16">
 
@@ -124,16 +134,16 @@
 					<!-- END #mgt_columns_latest -->
 
 				</section>
-				<!-- end #mgt_column -->
+				<!-- END #mgt_column -->
 
 			</div>
-			<!-- end #page_main_left -->
+			<!-- END #page_main_left -->
 
 			<?php get_sidebar('main'); ?>
 			<!-- END sidebar -->
 
 		</div>
-		<!-- end #page_main -->
+		<!-- END #page_main -->
 
 
 <?php get_footer(); ?>

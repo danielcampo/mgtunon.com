@@ -104,6 +104,12 @@ define('MODULESPATH',LIBRARYPATH.'/mdl');
 		$mgt_cm_form = MODULESPATH.'/cm-form/cm-form.php';
 		mgt_inc($mgt_cm_form);
 	}
+	
+	// MGT QOTD
+	function mgt_qotd() {
+		$mgt_qotd = MODULESPATH.'/mgt-qotd/mgt-qotd.php';
+		mgt_inc($mgt_qotd);
+	}	
 
 	// MGT Share
 	function mgt_share() {
