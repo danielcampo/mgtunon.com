@@ -17,6 +17,16 @@ define('WP_USE_THEMES',false);
 		}
 	
 	});	
+	
+	// Loads MGT Video Player
+	$('.mgt_columns_video_overlay').click(function(e){
+
+		e.preventDefault();
+		
+		$('#mgt_columns_video_player').slideDown('1800');
+		
+		$('#mgt_columns_video_player').load('/ajax-mgt-vid-col/', {id : $(this).attr('id')}, function(){ $('#mgt_columns_video_player .loader').fadeOut(500); $('#mgt_resources_cats').slideto({ highlight: false }); });
+	});	
 	</script>
 	
 	<h1 id="mgt_columns_video_title">MGT Video Player</h1>
