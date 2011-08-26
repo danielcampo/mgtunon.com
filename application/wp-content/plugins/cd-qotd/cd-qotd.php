@@ -48,8 +48,13 @@ function cd_get_qotd_plugin_dir() {
 
 $cd_qotd_css = cd_get_qotd_plugin_dir()."/css";
 
+/* 
+Edited by Epiksol Creative
+We do not need to load the styles from this plugin. They are defined in the themes main css.
+
 wp_register_style('cd-qotd', $cd_qotd_css.'/cd-qotd.css');
 wp_enqueue_style('cd-qotd',$cd_qotd_css."/cd-qotd.css");
+*/
 
 
 function cd_qotd_quote() {
