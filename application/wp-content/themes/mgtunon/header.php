@@ -19,7 +19,7 @@
 	
 	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>">
-	<link rel="stylesheet" media="handheld" href="<?php bloginfo('template_directory') ?>/library/css/handheld.css?v=2">
+	<link rel="stylesheet" media="handheld" href="<?php bloginfo('template_directory') ?>/library/css/handheld.css">
 	<script src="<?php bloginfo('template_directory') ?>/library/js/libs/modernizr-1.7.min.js"></script>
 	
 	<?php wp_head(); ?>
