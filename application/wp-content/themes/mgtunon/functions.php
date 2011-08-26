@@ -20,9 +20,14 @@ register_sidebar(array(
 }
 
 // Scripts
-if(!is_admin()) {
-	wp_deregister_script('jquery');
+function mgt_scripts() {
+	if(!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_deregister_script('l10n');	
+	}
 }
+
+add_action('init','mgt_scripts');
 
 /********************************/
 /* Constants */
