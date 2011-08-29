@@ -60,7 +60,7 @@
 								</a>
 							</h3>
 							<span class="mgt_list_meta">
-								<?php include_term_data($post->ID,'Document Types: ','mgt_documents_types','normal'); ?> &nbsp;|&nbsp; <?php include_term_data($post->ID,'Resource Categories: ','mgt_resources_cats','normal'); ?>
+								<?php include_term_data($post->ID,'Resource Categories: ','mgt_resources_cats','normal'); ?>
 							</span>
 							
 							<p><?php echo excerpt(30); ?></p>
