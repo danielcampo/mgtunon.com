@@ -68,6 +68,7 @@
 						<li><a href="/">Home</a></li>
 						<li><a href="/blog">Blog</a></li>
 						<li><a href="/columns">Columns</a></li>
+						<li><a href="/tv-segments">TV Segments</a></li>
 						<li><a href="/programs">Programs</a></li>
 						<li><a href="/resources">Resources</a></li>
 						<li><a href="/biography">Biography</a></li>
