@@ -11,12 +11,13 @@
 						<?php 
 							$mgt_blog_args = array(
 							'category' => 'blog',
-							'posts_per_page' => 10
+							'posts_per_page' => 10,
+							'paged' => $paged
 						);
 						?>
-						<?php $mgt_blog_args = NEW WP_Query($mgt_blog_args); ?>
+						<?php $mgt_blog = NEW WP_Query($mgt_blog_args); ?>
 
-						<?php if($mgt_blog_args->have_posts()) : while($mgt_blog_args->have_posts()) : $mgt_blog_args->the_post(); ?>
+						<?php if($mgt_blog->have_posts()) : while($mgt_blog->have_posts()) : $mgt_blog->the_post(); ?>
 						
 						
 						<div class="mgt_list_item">
@@ -30,7 +31,7 @@
 								<?php include_term_data($post->ID,'Resource Categories: ','mgt_resources_cats','normal'); ?>
 							</span>
 							
-							<?php the_excerpt(); ?>
+							<?php echo content(50); ?>
 							
 							<br />
 							
@@ -42,6 +43,10 @@
 							
 						<?php endwhile; endif; ?>
 						
+						<div class="pagination">
+							<?php previous_posts_link('&#8592; view previous page of entries &nbsp; | &nbsp;', $mgt_blog->max_num_pages) ?>
+							<?php next_posts_link('view next page of entries &#8594;', $mgt_blog->max_num_pages) ?>
+						</div>
 			
 				</section>
 				<!-- end #mgt_column -->
