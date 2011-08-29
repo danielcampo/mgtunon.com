@@ -307,6 +307,10 @@
 					
 				</section>
 				<!-- end #mgt_column -->
+				
+				&nbsp;
+
+				As seen on <a href="http://univision.com/" rel="external"><img title="Univision" src="http://mgtunon.com/application/wp-content/uploads/2011/08/networks_univision_horizontal.png" alt="" width="90" height="16" /></a>.
 			
 			</div>
 			<!-- end #page_main_left -->
