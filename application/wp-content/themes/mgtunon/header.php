@@ -43,7 +43,7 @@
 
 					<ul id="header_meta_ul" class="list_h">
 						<li>
-							<a id="cm_form_sub" href="#">Subscribe</a>
+							<a id="cm_form_sub" href="#">Subscribe for Weekly Updates</a>
 						</li>				
 					</ul>
 					<?php get_cm_form(); ?>		
