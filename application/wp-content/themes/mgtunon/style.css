@@ -84,7 +84,7 @@ a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
 /* Wordpress */
-img.aligncente {
+img.aligncenter {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
