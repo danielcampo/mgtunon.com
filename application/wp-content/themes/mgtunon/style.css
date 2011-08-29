@@ -194,7 +194,13 @@ a {
 	list-style: none;	
 }
 
+.date {
+	display: none;
+}
 
+.pagination {
+	text-align: center;
+}
 
 
 #page_header {
@@ -368,10 +374,6 @@ a {
 	position: relative;
 	top: 45px;
 	width: 45px;
-}
-
-.date {
-	display: none;
 }
 
 .ie7 .mgt_columns_video_overlay, .ie8 .mgt_columns_video_overlay {
