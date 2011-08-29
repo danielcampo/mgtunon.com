@@ -7,7 +7,16 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<title>MGTunon - Business Advice, Resources &amp; Insight</title>
+	<title>
+		<?php if ( is_home() ) { ?><?php bloginfo('description'); ?><?php } ?>
+		<?php if ( is_search() ) { ?><?php _e('Search Results'); ?><?php } ?>
+		<?php if ( is_author() ) { ?><?php _e('Author Archives'); ?><?php } ?>
+		<?php if ( is_single() ) { ?><?php wp_title(''); ?><?php } ?>
+		<?php if ( is_page() ) { ?><?php wp_title(''); ?><?php } ?>
+		<?php if ( is_category() ) { ?><?php _e('Post Category Archive'); ?> : <?php single_cat_title(); ?><?php } ?>
+		<?php if ( is_month() ) { ?><?php _e('Archive'); ?> : <?php the_time('$d'); ?> | <?php bloginfo('name'); ?><?php } ?>
+		<?php if (function_exists('is_tag')) {if (is_tag() ) { ?><?php _e('Tag Archive'); ?> : <?php single_tag_title("", true); } } ?> | <?php bloginfo('name'); ?>
+	</title>
 	<meta name="description" content="A talented writer and speaker, Manny Garcia-Tunon cuts straight to the heart of what business is all about with his powerful message of passion and meaning in the workplace.">
 	<meta name="author" content="Epiksol Creative | http://epiksolcreative.com/">
 	
