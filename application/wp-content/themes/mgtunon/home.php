@@ -70,7 +70,7 @@
 
 					<section id="mgt_columns_latest">
 
-						<h1>Related Columns</h1>
+						<h1>Related Weekly Columns</h1>
 						<div id="mgt_columns_rel">
 							<?php
 								$rel = wp_get_object_terms($latest_cat_id, 'mgt_resources_cats');
