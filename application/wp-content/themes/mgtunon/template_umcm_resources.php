@@ -6,37 +6,15 @@
 
 <?php get_header(); ?>
 
-<script>
-$( document ).ready( function () {
-	$('.teenJobs_spanish').toggle(
-		
-		function() {
-		$('.teenJobs_spanish_letter').slideDown('slow');
-		},
-		
-		function() {
-		$('.teenJobs_spanish_letter').slideUp('slow');
-		}
-	);
-	
-	$('.teenJobs_english').toggle(
-		
-		function() {
-		$('.teenJobs_english_letter').slideDown('slow');
-		},
-		
-		function() {
-		$('.teenJobs_english_letter').slideUp('slow');
-		}
-	);	
-});
-</script>
-
 		<div id="page_main" role="main" class="grid_16<?php mgt_ptype(); ?>">
 			
 			<div id="page_main_left" class="grid_10 alpha omega">
 				
 				<section id="page_content">
+					
+					<?php while(have_posts()) : the_post(); ?>
+						<?php the_content(); ?>
+					<?php endwhile; ?>
 				
 					<div class="resource">
 
@@ -342,3 +320,29 @@ $( document ).ready( function () {
 	
 	
 <?php get_footer(); ?>
+
+<script>
+$( document ).ready( function () {
+	$('.teenJobs_spanish').toggle(
+		
+		function() {
+		$('.teenJobs_spanish_letter').slideDown('slow');
+		},
+		
+		function() {
+		$('.teenJobs_spanish_letter').slideUp('slow');
+		}
+	);
+	
+	$('.teenJobs_english').toggle(
+		
+		function() {
+		$('.teenJobs_english_letter').slideDown('slow');
+		},
+		
+		function() {
+		$('.teenJobs_english_letter').slideUp('slow');
+		}
+	);	
+});
+</script>
