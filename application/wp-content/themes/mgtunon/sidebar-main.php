@@ -35,7 +35,7 @@
 					
 					<hgroup class="section_title">
 						<h1><?php echo $mgt_rel_res_list_title; ?></h1>
-						<h6>Here are some of our latest business resources to help mold you into the business professional that you aspire to be.</h6>
+						<h6>Here are some of our latest business resources to help mold you into the business professional you aspire to be.</h6>
 					</hgroup>					
 					
 					
