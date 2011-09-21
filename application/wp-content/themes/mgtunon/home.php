@@ -3,6 +3,55 @@
 		<?php mgt_featured(); ?>
 		
 		<?php mgt_qotd(); ?>
+		
+
+		<?php
+			$mgt_resources_umcm_args = array(
+				'category_name' => 'umcm-resources',
+				'post_per_page' => 1
+			);
+			
+			$mgt_resources_umcm = NEW WP_Query($mgt_resources_umcm_args);
+		?>
+			
+		<?php if($mgt_resources_umcm->have_posts()) : while($mgt_resources_umcm->have_posts()) : $mgt_resources_umcm->the_post(); ?>		
+		
+		<section id="page_umcm" class="grid_16 clearfix">
+			
+			<div id="umcm_content">
+				
+				<div class="grid_3 alpha">
+
+					<a href="http://mgtunon.com/unos-minutos-con-manny/resources/">
+						<img class="alignleft size-medium wp-image-839" title="Unos Minutos Con Manny"src="http://mgtunon.com/application/wp-content/uploads/2011/08/umcm_logo-150x150.jpg" alt="" />
+					</a>
+					
+					<p style="text-align:center">As seen on <a href="http://univision.com/" rel="external" target="_blank"><img class="alignnone size-full wp-image-863" title="Univision" src="http://mgtunon.com/application/wp-content/uploads/2011/08/networks_univision_horizontal.png" alt="" width="90" height="16"></a>.</p>
+
+				</div>
+
+				<div class="grid_13 omega">
+
+					<h3>Unos Minutos Con Manny <br /> <span style="color: #bbb;">Latest Resource</span></h3>
+					
+						
+						<h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+						<h6><?php the_date(); ?></h6>
+						
+						<?php the_excerpt(); ?>
+						
+						<p><a href="<?php the_permalink(); ?>">Ver este Recurso</a></p>
+						
+				</div>
+
+			</div>
+			<!-- END #umcm_content -->
+			
+		</section>
+		<!-- END #page_umcm -->
+		
+		<?php endwhile; endif; ?>		
+		
 
 
 		<div id="page_main" role="main" class="grid_16">

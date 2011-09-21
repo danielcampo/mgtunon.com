@@ -302,6 +302,19 @@ a {
 	padding-top: 8px;
 }
 
+#page_umcm {
+	background: url('http://mgtunon.com/application/wp-content/themes/mgtunon/library/img/mgt_qotd_top_bg.png') top repeat-x;
+	padding-top: 20px;
+}
+
+#page_umcm h4 {
+	padding-bottom: 0;
+}
+
+#page_umcm h6 {
+	padding-top: 0;
+}
+
 #page_middle {
 	background: #fafafa url('library/img/mgt_middle_bg.png') no-repeat;
 	min-height: 220px;
