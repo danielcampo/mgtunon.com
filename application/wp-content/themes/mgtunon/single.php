@@ -9,7 +9,7 @@
 					<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 					
 						<h1><?php the_title(); ?></h1>
-						<?php breadcrumbs(); ?>
+						<?php if(!in_category('umcm-resources')) : ?><?php breadcrumbs(); ?><?php endif; ?>
 						
 						<?php mgt_share(); // MGT Share ?>
 						
